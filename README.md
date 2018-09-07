@@ -1,6 +1,6 @@
 Code used in the following paper:
 
-**T. Kusmierczyk, M. Gomez-Rodriguez: [On the Causal Effect of Badges.](https://arxiv.org/abs/1707.08160) WWW 2018.** [SLIDES](https://www.slideshare.net/TomaszKusmierczyk/on-the-causal-effect-of-digital-badges)
+**T. Kusmierczyk, M. Gomez-Rodriguez: [On the Causal Effect of Badges.](https://arxiv.org/abs/1707.08160) WWW 2018.** [(SLIDES)](https://www.slideshare.net/TomaszKusmierczyk/on-the-causal-effect-of-digital-badges)
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -62,7 +62,7 @@ Files are TAB separated and every included event consist of user id, time and ev
   * ``fit_bayes1.py`` - Fits the robust (Bayesian with priors) survival model under H0.
   * ``fit_bayes2.py`` - Fits the robust (Bayesian with priors) survival model under H1.
 
-* Statistical tests - src/testing:
+* Statistical tests - ``src/testing``:
   * ``fisher_test.py`` - Calculation of p-values from Fisher exact test on counts (before vs after change).
   * ``wilks_test.py`` - Calculation of p-values from log-likelihood ratio test of nested models using Chi2 distribution (Wilks theorem).
   * ``bootstrap.py`` - Helpers to calculate p-value from empirical distribution of the test statistic.
@@ -72,6 +72,6 @@ Files are TAB separated and every included event consist of user id, time and ev
 
 ### Execution and multiprocessing
 
-Two main scripts to reproduce our results are ``src/experiments/RUN_ALL_EXPERIMENTS.sh`` and ``src/synthetic/RUN_ALL_EXPERIMENTS.sh``. We support multiprocessing, e.g., every time window can be executed in a separate process. The number of used cores can be specified inside the files.
+Two main scripts to reproduce our results are ``src/experiments/RUN_ALL_EXPERIMENTS.sh`` and ``src/synthetic/RUN_ALL_EXPERIMENTS.sh``. We support multiprocessing, e.g., every time window can be executed in a separate process. The number of used cores can be specified inside the scripts.
 
 
